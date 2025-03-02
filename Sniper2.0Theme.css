@@ -1,1 +1,99 @@
+/**
+  * @name Sniper 2.0
+  * @author NotPhrayz
+  * @version 2.0
+  * @description A sleek and modern theme for Discord
+  * @source https://github.com/NotPhrayz/Sniper-Theme-2.0
+  * @website https://github.com/NotPhrayz
+  * @invite YOUR_DISCORD_INVITE_CODE
+*/
 
+/* Import Google Font (Optional) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --sniper-bg: #1e1e1e; /* Background color */
+  --sniper-bg2: #2d2d2d; /* Secondary background */
+  --sniper-sec: #bb86fc; /* Accent color */
+  --sniper-links: #cdaef3; /* Link color */
+  --sniper-text: #ffffff; /* Text color */
+  --sniper-home-icon: url(https://i.imgur.com/RvlNQ7k.png); /* Custom home icon */
+}
+
+/* Apply Background Colors */
+.app, .bg__960e4, .container_a2f514, .scrollerInner__36d07 {
+  background-color: var(--sniper-bg) !important;
+}
+
+/* Style Text and Links */
+.text__19b6d, .username__0a06e, .discriminator__0a06e {
+  color: var(--sniper-text) !important;
+}
+
+a, .link__2e8e1 {
+  color: var(--sniper-links) !important;
+}
+
+/* Style Buttons */
+.button__67645 {
+  background-color: var(--sniper-bg2) !important;
+  color: var(--sniper-sec) !important;
+  border-radius: 5px;
+}
+
+.button__67645:hover {
+  background-color: var(--sniper-sec) !important;
+  color: var(--sniper-bg) !important;
+}
+
+/* Style Sidebar */
+.sidebarRegion__23e6b {
+  background-color: var(--sniper-bg2) !important;
+}
+
+/* Style Chat Area */
+.chatContent_f75fb0 {
+  background-color: var(--sniper-bg) !important;
+}
+
+/* Style Message Bubbles */
+.message__02a39 {
+  background-color: var(--sniper-bg2) !important;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+/* Custom Watermark */
+.wordmark__421ed:after {
+  content: "Sniper 2.0 by NotPhrayz";
+  color: var(--sniper-sec);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--sniper-sec);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--sniper-bg);
+}
+
+/* Custom Home Icon */
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 {
+  background: var(--sniper-home-icon) center/cover no-repeat;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 svg {
+  display: none;
+}
